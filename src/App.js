@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Balance from "./components/Balance";
 import TrackExpenses from "./components/TrackExpenses";
 import TransactionList from "./components/TransactionList";
+import AddTransaction from "./components/AddTransaction";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Balance />
         <TrackExpenses />
         <TransactionList />
+        <AddTransaction />
       </div>
     </div>
   );
