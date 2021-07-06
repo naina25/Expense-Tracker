@@ -9,13 +9,7 @@ const TransactionList = () => {
       <h3>History</h3>
       <ul id="list" className="list">
         {transactions.map((transaction) => {
-          return (
-            <Transaction
-              amount={transaction.amount}
-              text={transaction.text}
-              key={transaction.id}
-            />
-          );
+          return <Transaction transaction={transaction} key={transaction.id} />;
         })}
       </ul>
     </>
