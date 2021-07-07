@@ -9,7 +9,13 @@ export default (state, action) => {
           (transaction) => transaction.id !== action.payload
         ),
       };
+    case "Add-trans":
+      return {
+        ...state,
+        transactions: [action.payload, ...state.transactions],
+      };
     default:
       return state;
   }
+  console.log(state);
 };
